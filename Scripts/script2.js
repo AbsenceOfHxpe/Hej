@@ -15,7 +15,7 @@ async function loadDescriptionFromFile() {
         const response = await fetch('https://absenceofhxpe.github.io/Hej/pomys%C5%82y/descriptions.json');
         const data = await response.json();
         console.log("Załadowane dane:", data);  
-        return data.activities; 
+        descriptions = data.activities;  
     } catch (error) {
         console.error('Błąd ładowania pliku:', error);
     }
@@ -46,7 +46,6 @@ function getRandomIndex() {
     return Math.floor(Math.random() * images.length);
 }
 
-
 function loadRandomPage() {
     let index = sessionStorage.getItem('randomIndex');
     if (index === null) {
@@ -60,9 +59,8 @@ function loadRandomPage() {
     const descriptionElement = document.getElementById('description');
 
     imageElement.src = images[index];
-    descriptionElement.innerHTML = descriptions[index] || 'Brak opisu';  
+    descriptionElement.innerHTML = descriptions[index] ? displayActivity(descriptions[index]) : 'Brak opisu';  
 }
-
 
 document.getElementById('randomizeBtn').addEventListener('click', function () {
     const newIndex = getRandomIndex();
@@ -70,11 +68,10 @@ document.getElementById('randomizeBtn').addEventListener('click', function () {
     loadRandomPage();
 });
 
-
 window.onload = function() {
     loadDescriptionFromFile().then(() => {
         if (descriptions.length > 0) {
-            displayActivity(descriptions[0]);  
+            loadRandomPage();  
         } else {
             console.error('Brak danych do wyświetlenia.');
         }

@@ -12,7 +12,7 @@ let descriptions = [];
 
 async function loadDescriptionFromFile() {
     try {
-        const response = await fetch('./pomysły/descriptions.json');
+        const response = await fetch('https://absenceofhxpe.github.io/Hej/pomys%C5%82y/descriptions.json');
         if (!response.ok) {
             throw new Error(`Błąd serwera: ${response.status}`);
         }

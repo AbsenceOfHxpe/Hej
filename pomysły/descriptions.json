@@ -1,0 +1,141 @@
+[
+    {
+      "title": "Piknik pod pięknymi kwiatami i piękniejszym obłokiem",
+      "costs": "około 5000zł (wliczone koszta podróży)",
+      "events": [
+        "Przychodzimy do parku, jak zwykle wyglądasz nieziemsko...",
+        "Szukamy wolnego miejsca, pośród innych piknikowiczów, nie zważając na przeciwności",
+        "Rozstawiamy kocyk, koszyk",
+        "Delektujemy się i rozmawiamy na niezliczone tematy być może nie związane z otoczeniem"
+      ],
+      "alternativeEvents": [
+        "Może zacząć padać (nie za fajnie) -> Przechodzimy do kawiarenki i oglądamy deszcz delektując się kawą",
+        "Za dużo ludzi i nie ma nigdzie miejsca -> należy postępować według uznania (najwyżej można wygonić chinola)"
+      ],
+      "timeDependencies": {
+        "frequency": "~2 razy rocznie",
+        "duration": "do zachodu słońca",
+        "peakTimes": "W trakcie festiwali"
+      },
+      "actorValues": [
+        "Niezapomniane wspomnienia, które pozostaną z nami do końca życia",
+        "Pamiątki kupione podczas podróży powrotnej"
+      ]
+    },
+    {
+      "title": "Szalony koncert country w Polsce",
+      "costs": "około 100-200zł",
+      "events": [
+        "Kupujemy bilety na koncert",
+        "Ubieramy się w najbardziej szalone stroje cowboyskie, jakich nikt nie widział",
+        "Wybieramy się na miejsce",
+        "Tańczymy do białej nocy lub końca koncertu, jakby jutra miało nie być"
+      ],
+      "alternativeEvents": [
+        "Odwołany koncert -> Aha i tak nikt nie chciał tego słuchać, pójdziemy na coś normalnego, mogą żałować, że nas nie będzie"
+      ],
+      "timeDependencies": {
+        "frequency": "~1 raz w życiu (chyba, że będzie tak super, że będziesz chciała znów)",
+        "duration": "od dwóch do trzech godzin",
+        "peakTimes": "W punkcie kulminacyjnym koncertu"
+      },
+      "actorValues": [
+        "Nowa pasja do pięknej kultury i jeszcze piękniejszych brzmień",
+        "Pragnienie zostania prawdziwym kowbojem i przemierzania bezkresu do końca dni"
+      ]
+    },
+    {
+      "title": "Randka w domu",
+      "costs": "co będzie pod ręką",
+      "events": [
+        "Przeglądamy razem Tiktok i zaczyna nam się nudzić",
+        "Czemu by nie wykorzystać jakiegoś z miliona pomysłów na bycie kreatywnym",
+        "Tworzenie wspólnych historii/malowanie nowego dzieła sztuki współczesnej/stworzenie własnego projektu DIY/cokolwiek",
+        "Śmiejemy się z naszego beztalencia i próbujemy być przy tym poważni"
+      ],
+      "alternativeEvents": [
+        "Jesteś głodna -> Idę na szybko do sklepu i gotujemy coś na co masz ochotę razem",
+        "Nie chce nam się i oglądamy Tiktoks aż nie zaśniesz"
+      ],
+      "timeDependencies": {
+        "frequency": "~1-2 razy w tygodniu",
+        "duration": "dwie godziny",
+        "peakTimes": "Weekendy oraz wolne dni"
+      },
+      "actorValues": [
+        "Dobra zabawa",
+        "Odskocznia od szarej codzienności"
+      ]
+    },
+    {
+      "title": "Spokojny spacer",
+      "costs": "brak",
+      "events": [
+        "Wychodzimy razem",
+        "Trzymamy się za ręce",
+        "Idziemy tam, gdzie nas nogi poniosą",
+        "Zauważam sklep z kwiatami, które na pewno by Ci się spodobały",
+        "Kupuje je, żebyś czuła się wyjątkowa cały czas"
+      ],
+      "alternativeEvents": [
+        "brak -> od czasu do czasu trzeba wyjść dla zdrowia"
+      ],
+      "timeDependencies": {
+        "frequency": "~1-7 razy w tygodniu",
+        "duration": "od trzydziestu minut do trzech godzin",
+        "peakTimes": "weekendy oraz godziny szczytu"
+      },
+      "actorValues": [
+        "Wspólne towarzystwo",
+        "Obgadywanie losowych przechodniów",
+        "Spotkanie losowego znajomego (oby nie)"
+      ]
+    },
+    {
+      "title": "Zakupy w galerii",
+      "costs": "brak :)",
+      "events": [
+        "Masz ochotę na zakupy",
+        "Wychodzimy w następnym momencie",
+        "Kupujemy tyle, aż karta nie wybuchnie od braku dodatkowych zer na koncie",
+        "Wracamy do domu i podziwiamy łupy z podróży"
+      ],
+      "alternativeEvents": [
+        "idziemy do innego sklepu -> dalszy ciąg pozostaje niezmienny",
+        "Nie chce się iść -> Robimy zakupy online"
+      ],
+      "timeDependencies": {
+        "frequency": "tyle ile chcesz",
+        "duration": "od jednej do trzech godzin",
+        "peakTimes": "weekendy"
+      },
+      "actorValues": [
+        "Nowe przydatne i wartościowe zakupy",
+        "Można się pochwalić robiąc haul zakupowy",
+        "Rozczarowanie tym, że ktoś może kupić jakieś gówno, które nam się nie podoba"
+      ]
+    },
+    {
+      "title": "Podróż w malownicze miejsce",
+      "costs": "paliwo w obie strony",
+      "events": [
+        "Wybieramy jakiś punkt na mapie, w którym nie byliśmy",
+        "Zwiedzamy ile wlezie",
+        "Podziwiamy spontaniczną decyzję"
+      ],
+      "alternativeEvents": [
+        "miejsce okazuje się być do cipci jak to mówią -> idziemy gdzie indziej"
+      ],
+      "timeDependencies": {
+        "frequency": "~1 raz w tygodniu",
+        "duration": "od jednej do pięciu godzin",
+        "peakTimes": "godziny szczytu"
+      },
+      "actorValues": [
+        "Odkrycie nowego miejsca na mapie",
+        "Poczucie się jak Kolumb (może tylko bez umierania)",
+        "Pamiątkowe fotki"
+      ]
+    }
+  ]
+  

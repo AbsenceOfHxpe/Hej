@@ -10,11 +10,9 @@ const images = [
 
 async function loadDescriptionFromFile() {
     try {
-        const response = await fetch('./pomysły/descriptions.txt');  
-        const text = await response.text();
-
-
-        descriptions = text.split('<!-- separator -->');
+        const response = await fetch('./pomysły/descriptions.json'); 
+        const data = await response.json();  
+        descriptions = data; 
     } catch (error) {
         console.error('Błąd ładowania pliku:', error);
     }

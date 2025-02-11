@@ -78,7 +78,7 @@ document.getElementById('randomizeBtn').addEventListener('click', function () {
 window.onload = function() {
     loadDescriptionFromFile().then(() => {
         if (descriptions.length > 0) {
-            displayActivity(descriptions[0]);  
+            loadRandomPage(); 
         } else {
             console.error('Brak danych do wyświetlenia.');
         }

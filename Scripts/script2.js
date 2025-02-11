@@ -10,7 +10,7 @@ const images = [
 
 async function loadDescriptionFromFile() {
     try {
-        const response = await fetch('/pomysły/descriptions.txt');  
+        const response = await fetch('./pomysły/descriptions.txt');  
         const text = await response.text();
 
 

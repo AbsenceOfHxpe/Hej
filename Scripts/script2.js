@@ -31,15 +31,17 @@ function displayActivity(activity) {
     const content = `
         <h1>${activity.title}</h1>
         <h3>1. Szacowane koszta:</h3>
-        <p>${activity.cost}</p>
+        <p>${activity.costs}</p>  
         <h3>2. Podstawowy ciąg zdarzeń:</h3>
-        <p>${activity.main_events.join('<br>')}</p>
+        <p>${activity.events.join('<br>')}</p>  
         <h3>3. Alternatywny ciąg zdarzeń:</h3>
-        <p>${activity.alternative_events.join('<br>')}</p>
+        <p>${activity.alternativeEvents.join('<br>')}</p>  
         <h3>4. Zależności czasowe:</h3>
-        <p>${activity.time_dependencies.join('<br>')}</p>
+        <p>${activity.timeDependencies.frequency}</p>
+        <p>${activity.timeDependencies.duration}</p>
+        <p>${activity.timeDependencies.peakTimes}</p>
         <h3>5. Wartości uzyskane przez aktorów:</h3>
-        <p>${activity.actor_benefits.join('<br>')}</p>
+        <p>${activity.actorValues.join('<br>')}</p> 
     `;
     descriptionElement.innerHTML = content;
 }

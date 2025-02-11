@@ -41,10 +41,14 @@ function displayActivity(activity) {
 }
 
 
+function getRandomIndex() {
+    return Math.floor(Math.random() * descriptions.length); 
+}
+
 function loadRandomPage() {
     let index = sessionStorage.getItem('randomIndex');
-    if (index === null) {
-        index = getRandomIndex();
+    if (index === null || index >= descriptions.length) {
+        index = getRandomIndex(); 
         sessionStorage.setItem('randomIndex', index);
     } else {
         index = parseInt(index, 10);
@@ -53,10 +57,13 @@ function loadRandomPage() {
     const imageElement = document.getElementById('image');
     const descriptionElement = document.getElementById('description');
 
+
     imageElement.src = images[index];
 
+ 
     if (descriptions.length > 0) {
-        descriptionElement.innerHTML = descriptions[index] || 'Brak opisu';  
+        const activity = descriptions[index]; 
+        displayActivity(activity); 
     } else {
         descriptionElement.innerHTML = 'Brak danych do wyświetlenia.';
     }

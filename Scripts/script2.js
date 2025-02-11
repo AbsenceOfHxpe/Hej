@@ -10,12 +10,30 @@ const images = [
 
 async function loadDescriptionFromFile() {
     try {
-        const response = await fetch('./pomysły/descriptions.json'); 
-        const data = await response.json();  
-        descriptions = data; 
+        const response = await fetch('./pomysły/descriptions.json');
+        const data = await response.json();
+        return data.activities; 
     } catch (error) {
         console.error('Błąd ładowania pliku:', error);
     }
+}
+
+function displayActivity(activity) {
+    const descriptionElement = document.getElementById('description');
+    const content = `
+        <h1>${activity.title}</h1>
+        <h3>1. Szacowane koszta:</h3>
+        <p>${activity.cost}</p>
+        <h3>2. Podstawowy ciąg zdarzeń:</h3>
+        <p>${activity.main_events.join('<br>')}</p>
+        <h3>3. Alternatywny ciąg zdarzeń:</h3>
+        <p>${activity.alternative_events.join('<br>')}</p>
+        <h3>4. Zależności czasowe:</h3>
+        <p>${activity.time_dependencies.join('<br>')}</p>
+        <h3>5. Wartości uzyskane przez aktorów:</h3>
+        <p>${activity.actor_benefits.join('<br>')}</p>
+    `;
+    descriptionElement.innerHTML = content; 
 }
 
 
@@ -53,7 +71,7 @@ document.getElementById('randomizeBtn').addEventListener('click', function () {
 
 
 window.onload = function() {
-    loadDescriptionFromFile().then(() => {
-        loadRandomPage();  
+    loadDescriptionFromFile().then(activities => {
+        displayActivity(activities[0]); 
     });
 };

@@ -13,18 +13,15 @@ let descriptions = [];
 async function loadDescriptionFromFile() {
     try {
         const response = await fetch('./pomysły/descriptions.json');
-        
         if (!response.ok) {
-            throw new Error('Nie udało się załadować pliku JSON.');
+            throw new Error(`Błąd serwera: ${response.status}`);
         }
-
         const data = await response.json();
-        descriptions = data.activities;  
+        return data.activities; 
     } catch (error) {
         console.error('Błąd ładowania pliku:', error);
     }
 }
-
 
 function displayActivity(activity) {
     const descriptionElement = document.getElementById('description');

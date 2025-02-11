@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Małe pytanko...</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="inne/ikonka.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <audio id="myAudio" autoplay>
+        <source src="inne/saudade, saudade.mp3" type="audio/mp3">
+        Twoja przeglądarka nie obsługuje elementu audio.
+    </audio>
+    
+    <button id="playButton" class="audio-btn">
+        <i class="fas fa-volume-up fa-xs"></i> 
+    </button>
+
+
+    <div id="counter">Odrzucenia: 0</div>
+    <img src="inne/emek2.gif" alt="Pieknis slodki w ogole mozna go zjesc aaaa">
+    <h2>Ten słodziaczek od dawna pragnie pójść z Tobą na randkę... <p id="tekst" style="text-align: center;">Więc czy chcesz iść?</p></h2>
+    <div class="buttons">
+        <button class="ok" onclick="redirectToIndex()">Tak ˶ᵔ ᵕ ᵔ˶</button>
+        <button class="escape">Nie  ˙◠˙</button>
+    </div>
+
+    <button class="end-btn"> <a href="inne/notatki.txt" download="notatki.txt">To na koniec</a></button>
+
+    <script src="Scripts/script.js"></script>
+
+    <script>
+        document.getElementById('playButton').addEventListener('click', function() {
+            var audio = document.getElementById('myAudio');
+            audio.volume = 0.05;  
+            audio.play().catch(function(error) {
+                console.log('Audio nie może zostać odtworzone:', error);
+            });
+        });
+
+        function saveAudioTime() {
+            var audio = document.getElementById('myAudio');
+            localStorage.setItem('audioTime', audio.currentTime);
+
+            window.location.href = 'html/index.html'; 
+        }
+    </script>
+</body>
+</html>

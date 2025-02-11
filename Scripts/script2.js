@@ -7,16 +7,24 @@ const images = [
     '../pomysły/numer6.jpg'
 ];
 
+let descriptions = []; 
+
 
 async function loadDescriptionFromFile() {
     try {
         const response = await fetch('./pomysły/descriptions.json');
+        
+        if (!response.ok) {
+            throw new Error('Nie udało się załadować pliku JSON.');
+        }
+
         const data = await response.json();
-        return data.activities; 
+        descriptions = data.activities;  
     } catch (error) {
         console.error('Błąd ładowania pliku:', error);
     }
 }
+
 
 function displayActivity(activity) {
     const descriptionElement = document.getElementById('description');
@@ -33,7 +41,7 @@ function displayActivity(activity) {
         <h3>5. Wartości uzyskane przez aktorów:</h3>
         <p>${activity.actor_benefits.join('<br>')}</p>
     `;
-    descriptionElement.innerHTML = content; 
+    descriptionElement.innerHTML = content;
 }
 
 
@@ -44,8 +52,6 @@ function getRandomIndex() {
 
 function loadRandomPage() {
     let index = sessionStorage.getItem('randomIndex');
-
-
     if (index === null) {
         index = getRandomIndex();
         sessionStorage.setItem('randomIndex', index);
@@ -53,13 +59,11 @@ function loadRandomPage() {
         index = parseInt(index, 10);
     }
 
-
     const imageElement = document.getElementById('image');
     const descriptionElement = document.getElementById('description');
 
-
     imageElement.src = images[index];
-    descriptionElement.innerHTML = descriptions[index];
+    descriptionElement.innerHTML = descriptions[index] || 'Brak opisu';  
 }
 
 
@@ -71,7 +75,11 @@ document.getElementById('randomizeBtn').addEventListener('click', function () {
 
 
 window.onload = function() {
-    loadDescriptionFromFile().then(activities => {
-        displayActivity(activities[0]); 
+    loadDescriptionFromFile().then(() => {
+        if (descriptions.length > 0) {
+            displayActivity(descriptions[0]);  
+        } else {
+            console.error('Brak danych do wyświetlenia.');
+        }
     });
 };

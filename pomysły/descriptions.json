@@ -1,4 +1,6 @@
-[
+
+{
+"activities":[
     {
       "title": "Piknik pod pięknymi kwiatami i piękniejszym obłokiem",
       "costs": "około 5000zł (wliczone koszta podróży)",
@@ -138,4 +140,4 @@
       ]
     }
   ]
-  
+}

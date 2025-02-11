@@ -13,10 +13,8 @@ let descriptions = [];
 async function loadDescriptionFromFile() {
     try {
         const response = await fetch('https://absenceofhxpe.github.io/Hej/pomys%C5%82y/descriptions.json');
-        if (!response.ok) {
-            throw new Error(`Błąd serwera: ${response.status}`);
-        }
         const data = await response.json();
+        console.log("Załadowane dane:", data);  
         return data.activities; 
     } catch (error) {
         console.error('Błąd ładowania pliku:', error);

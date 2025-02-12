@@ -7,7 +7,15 @@ const images = [
     '../pomysły/numer6.jpg',
     '../pomysły/numer7.jpg',
     '../pomysły/numer8.jpg',
-    '../pomysły/numer9.jpg'
+    '../pomysły/numer9.jpg',
+    '../pomysły/numer10.jpg',
+    '../pomysły/numer11.jpg',
+    '../pomysły/numer12.jpg',
+    '../pomysły/numer13.jpg',
+    '../pomysły/numer14.jpg',
+    '../pomysły/numer15.jpg',
+    '../pomysły/numer16.jpeg',
+    '../pomysły/numer17.jpg'
 ];
 
 let descriptions = []; 

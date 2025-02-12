@@ -4,7 +4,10 @@ const images = [
     '../pomysły/numer3.jpeg',
     '../pomysły/numer4.jpg',
     '../pomysły/numer5.jpg',
-    '../pomysły/numer6.jpg'
+    '../pomysły/numer6.jpg',
+    '../pomysły/numer7.jpg',
+    '../pomysły/numer8.jpg',
+    '../pomysły/numer9.jpg'
 ];
 
 let descriptions = []; 
@@ -83,4 +86,13 @@ window.onload = function() {
             console.error('Brak danych do wyświetlenia.');
         }
     });
+
+    var audio = document.getElementById('myAudio');
+    var savedTime = localStorage.getItem('audioTime');
+
+    if (audio && savedTime) {
+        audio.currentTime = parseFloat(savedTime);
+        audio.volume = 0.05;
+        audio.play().catch(error => console.log("Nie można odtworzyć audio:", error));
+    }
 };

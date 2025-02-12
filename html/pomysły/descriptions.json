@@ -138,6 +138,72 @@
           "2. Poczucie się jak Kolumb (może tylko bez umierania)",
           "3. Pamiątkowe fotki"
         ]
+      },
+      {
+        "title": "Wypad w góry",
+        "costs": "około 200zł + dotarcie na miejsce",
+        "events": [
+          "1. Wyruszamy malowniczym szlakiem",
+          "2. Przemierzamy zawiłe przesmyki ledwo uchodząc z życiem",
+          "3. Odpoczywamy w schronisku popijając ciepłe kakao",
+          "4. Przejmujemy szczyt i deklarujemy zwycięstwo"
+        ],
+        "alternativeEvents": [
+          "1.Zła pogoda -> Zatrzymujemy się w zajeździe i siedzimy przy kominku do późnej nocy"
+        ],
+        "timeDependencies": {
+          "frequency": "a) ~1 raz rocznie",
+          "duration": "b) do dwóch dni",
+          "peakTimes": "c) Ferie"
+        },
+        "actorValues": [
+          "1. Podbity szczyt",
+          "2. Zmęczenie po udanej podróży w nieznanym kierunku"
+        ]
+      },
+      {
+        "title": "Wieczór planszówkowy",
+        "costs": "około 100zł",
+        "events": [
+          "1. Zapraszamy znajomych (lub nie)",
+          "2. Kupujemy słodkości i inne dobre",
+          "3. Wybieramy planszówkę na którą mamy ochotę",
+          "4. Gramy dopóki nie znudzi Ci się ile razy przegrałem",
+          "5. Sprzątamy po ze świeczkami dla klimatu i opowiadasz o tym ile razy wygrałaś i jak łatwe to było"
+        ],
+        "alternativeEvents": [
+          "1.brak ochoty -> Dekorujemy wystrój wnętrz, żeby wczuć się w klimat"
+        ],
+        "timeDependencies": {
+          "frequency": "a) ~1-2 razy na dwa tygodnie",
+          "duration": "b) do pięciu godzin",
+          "peakTimes": "c) zależne od liczby osób"
+        },
+        "actorValues": [
+          "1. Dobra zabawa",
+          "2. Chęć zemsty na przeciwnikach"
+        ]
+      },
+      {
+        "title": "Profesjonalna degustacja win",
+        "costs": "do 400zł",
+        "events": [
+          "1. Wybieramy wydarzenie",
+          "2. Ubieramy profesjonalne stroje do degustacji wina",
+          "3. Staramy się w jak najpoważniejszy sposób ocenić każde z win"
+        ],
+        "alternativeEvents": [
+          "1.Brak ewidentnie pasujących i wykwintnych wydarzeń -> degustacja w domu (odpowiedni ubiór nadal wymagany)"
+        ],
+        "timeDependencies": {
+          "frequency": "a) ~1 raz rocznie",
+          "duration": "b) do dwóch godzin",
+          "peakTimes": "c) początek wydarzenia"
+        },
+        "actorValues": [
+          "1. Wyrafinowane gustów smakowych",
+          "2. Możliwe uprzedzenie do wina przez najbliższe dni"
+        ]
       }
     ]
   }

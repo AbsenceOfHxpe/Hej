@@ -308,26 +308,86 @@
           "1. Ukulturawiamy się aż do porzygu",
           "2. Dużo informacji, które mi przekarzesz"
         ]
-      },
-      {
-        "title": "Pierwszy raz",
-        "costs": "nie wiem, to Ty to powiedziałaś",
+      },{
+        "title": "Zwiedzanie lokalnych muzeów lub galerii sztuki",
+        "costs": "~200zł",
         "events": [
-          "1. Robimy liste rzeczy, których nigdy nie robiliśmy",
-          "2. Przeprowadzamy rzetelne głosowanie",
-          "3. Robimy coś po raz pierwszy"
+          "1. Wybieramy lokalną wystawę, która nam się podoba",
+          "2. Zwiedzamy dopóki nam się nie znudzi"
         ],
         "alternativeEvents": [
-          "brak"
+          "1. Zamknięty lokal -> Idziemy do innego, następnym razem tam wrócimy"
         ],
         "timeDependencies": {
-          "frequency": "a) ~1 na dwa/trzy miesiące",
+          "frequency": "a) ~1 miesiąc",
           "duration": "b) od jednej do dwóch godzin",
+          "peakTimes": "c) weekendy"
+        },
+        "actorValues": [
+          "1. Ukulturawiamy się aż do porzygu",
+          "2. Dużo informacji, które mi przekarzesz"
+        ]
+      },
+      {
+        "title": "Zwiedzanie lokalnych muzeów lub galerii sztuki",
+        "costs": "~200zł",
+        "events": [
+          "1. Wybieramy lokalną wystawę, która nam się podoba",
+          "2. Zwiedzamy dopóki nam się nie znudzi"
+        ],
+        "alternativeEvents": [
+          "1. Zamknięty lokal -> Idziemy do innego, następnym razem tam wrócimy"
+        ],
+        "timeDependencies": {
+          "frequency": "a) ~1 miesiąc",
+          "duration": "b) od jednej do dwóch godzin",
+          "peakTimes": "c) weekendy"
+        },
+        "actorValues": [
+          "1. Ukulturawiamy się aż do porzygu",
+          "2. Dużo informacji, które mi przekarzesz"
+        ]
+      },
+      {
+        "title": "Nauka zupełnie nowego języka",
+        "costs": "brak",
+        "events": [
+          "1. Wybieramy jakiś język z cipska (kambodżanski, może inny murzyński, jakikolwiek)",
+          "2. Robimy notatki",
+          "3. Uczymy się, żeby potem na mieście rozmawiać pomiędzy sobą w slangu"
+        ],
+        "alternativeEvents": [
+          "1. Nie możemy dojść do porozumienia, który wybrać -> Zgadzam się na Twój"
+        ],
+        "timeDependencies": {
+          "frequency": "a) ~1 raz na rok",
+          "duration": "b) od jednej do pięciu godzin",
           "peakTimes": "c) brak"
         },
         "actorValues": [
-          "1. Dokonaliśmy czegoś nowego",
-          "2. Doświadczyliśmy zwariowanego przeżycia"
+          "1. Gadamy w obcym języku",
+          "2. Nikt się nie może dowiedzieć o czym rozmawiamy (po części)"
+        ]
+      },
+      {
+        "title": "Wyprawa z dokumentacją",
+        "costs": "zależy, ale raczej brak",
+        "events": [
+          "1. Wybieramy miejsce podróży",
+          "2. Dokumentujemy to milionem zdjęć",
+          "3. Wracamy i tworzymy prezentacje, żeby potem ją pokazać innym"
+        ],
+        "alternativeEvents": [
+          "1. Brak baterii w aparacie -> Dokumentujemy ściężkę na telefonach"
+        ],
+        "timeDependencies": {
+          "frequency": "a) ~1 raz na rok",
+          "duration": "b) od jednej do czterech godzin",
+          "peakTimes": "c) weekendy"
+        },
+        "actorValues": [
+          "1. Odkrywamy nowo poznane szlaki",
+          "2. Tworzymy mapę dla pokoleń i przyszłych ludzi odkrywców"
         ]
       }
     ]
